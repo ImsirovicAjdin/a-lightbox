@@ -1,12 +1,42 @@
 .modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: hsla(0, 0%, 0%, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: hsla(0, 0%, 0%, 0.5);
 }
 .modal-overlay.show {
-    display: block;
+  display: block;
+}
+.modal-wrapper {
+  position: relative;
+  top: 100px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.modal-header {
+  position: relative;
+}
+.modal-header h2 {
+  margin: 0;
+}
+.modal-header button {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 20px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin: -20px;
+  background: tomato;
+  color: white;
 }
