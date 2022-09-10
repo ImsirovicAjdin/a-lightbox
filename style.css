@@ -10,3 +10,16 @@
 .modal-overlay.show {
   display: block;
 }
+.modal-wrapper {
+    position: relative;
+    top: 100px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px 5px hsla(0, 0%, 0%, 0.5);
+}
+.modal-wrapper img {
+    width: 100%;
+}
