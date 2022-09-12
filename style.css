@@ -1,4 +1,4 @@
-.modal-overlay {
+#modal-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -7,19 +7,22 @@
   left: 0;
   background: hsla(0, 0%, 0%, 0.5);
 }
-.modal-overlay.show {
-  display: block;
+
+#modal-wrapper {
+  position: relative;
+  top: 100px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px 5px hsla(0, 0%, 0%, 0.5);
 }
-.modal-wrapper {
-    position: relative;
-    top: 100px;
-    width: 500px;
-    margin: 0 auto;
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 30px 5px hsla(0, 0%, 0%, 0.5);
+
+.show {
+  display: block !important
 }
-.modal-wrapper img {
-    width: 100%;
+
+.show img.slide {
+  width: 100% !important
 }
