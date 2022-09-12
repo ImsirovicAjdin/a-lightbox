@@ -7,24 +7,33 @@ let imgs = [
 
 const modalTriggerImg = [...document.getElementsByClassName('triggerModal')];
 const modal = document.getElementById('modal-overlay');
+const closeClass = document.getElementsByClassName('close');
 
 for(let i = 0; i < modalTriggerImg.length; i++) {
     modalTriggerImg[i].addEventListener('click', () => {
+        document.slide.src = imgs[i];
         modal.classList.toggle('show');
     })
 }
 
+function closeModal() {
+    modal.classList.toggle('show');
+}
+
 function nextSlide() {
-    document.slide.src = imgs[counter];
-    console.log(counter);
+    console.log("Counter value before 'next' btn click:" + counter);
     counter < (imgs.length - 1) ? counter++ : counter = 0;
+    document.slide.src = imgs[counter];
+    console.log("Counter value after 'next' btn click:" + counter);
 }
 
 function prevSlide() {
+    console.log("Counter value before prev btn click: " + counter);
     if (counter <= 0) {
         counter = imgs.length - 1;
     } else {
         counter--;
     }
-    img.src = imgs[counter];
+    document.slide.src = imgs[counter];
+    console.log("Counter value after prev btn click: " + counter);
 }
